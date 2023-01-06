@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ámbito laboral juvenil</title>
+    <style>
+      /* Estilos para la imagen de portada */
+      #portada {
+        background-image: url('portada.jpg');
+        background-size: cover;
+        height: 500px;
+      }
+      
+      /* Estilos para el menú */
+      #menu {
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      #menu a {
+        color: white;
+        text-decoration: none;
+      }
+      #menu .menu-btn {
+        display: none;
+      }
+      
+      /* Estilos para el contenido */
+      #contenido {
+        margin: 50px 0;
+      }
+      
+      /* Estilos para el menú en dispositivos móviles */
+      @media screen and (max-width: 600px) {
+        #menu .menu-btn {
+          display: block;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        #menu ul {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          right: 0;
+          background-color: black;
+          display: none;
+        }
+        #menu ul li {
+          display: block;
+          text-align: center;
+        }
+        #menu ul li a {
+          display: block;
+          padding: 10px;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="portada">
+      <div id="menu">
+        <a href="#">Ámbito laboral juvenil</a>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+          <li><a href
